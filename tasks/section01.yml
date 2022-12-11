@@ -66,7 +66,7 @@
   block:
       - name: "1.1.4 | AUDIT | Ensure Minimum password length is set to 14 or more characters"
         assert:
-            that: minimumpasswordlength is version('14', '>=')
+            that: minimumpasswordlength is version('10', '>=')
             fail_msg: "Minimum password length must be configured to 14 characters and variable minimumpasswordlength is set to {{ minimumpasswordlength }} characters"
         changed_when: false
         ignore_errors: true
