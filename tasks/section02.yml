@@ -82,6 +82,7 @@
       name: SeInteractiveLogonRight
       users:
           - Administrators
+          - Users
       action: set
   when:
       - rule_2_2_7
